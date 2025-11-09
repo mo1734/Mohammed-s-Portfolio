@@ -137,7 +137,7 @@ const Projects = () => {
               >
                 <h4
                   className="fw-bold mb-3"
-                  style={{ color: "rgb(161, 161, 170) "  }}
+                  style={{ color: " rgba(255, 215, 0, 0.5)"  }}
                 >
                   {project.title}
                 </h4>

@@ -34,7 +34,7 @@ function Header() {
                         </motion.div>
 
                         <a 
-                            href="../../assets/Mohammed Ali Mohammed Hanafy4.docx" 
+                            href="../../../public/Mohammed Ali Mohammed Hanafy5.pdf" 
                             download 
                             className="text-decoration-none custom-link-gold footer-link-size"
                         >

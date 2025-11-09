@@ -29,7 +29,7 @@ export default function SkillsAndCertificates() {
 
 
   return (
-   <section style={{ paddingTop: "160px" }} >
+   <section style={{ paddingTop: "80px" }} >
   <div className="container">
     <h2  style={{ marginBottom: "70px", marginTop : "35px" , color : ' rgb(161 , 161 , 170)' }} className="text-center fw-bold  ">
       Skills <span >&</span> <span style={{color : ' #B8860B' }}>Certificates</span> 
@@ -41,7 +41,7 @@ export default function SkillsAndCertificates() {
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false , amount : 0.7 }}
+          viewport={{ once: true }}
           variants={fadeUp}
           custom={0}
         >
