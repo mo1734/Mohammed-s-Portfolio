@@ -1,0 +1,87 @@
+.imageShadow {
+  box-shadow: 0 0 10px var(--golden-glow),
+              0 0 10px var(--golden-glow),
+              0 0 40px rgba(255, 215, 0, 0.5);
+  transition: box-shadow 0.3s ease-in-out;
+  
+}
+
+.imageShadow:hover {
+  box-shadow: 0 0 15px var(--golden-glow),
+              0 0 15px var(--golden-glow),
+              0 0 60px rgba(255, 215, 0, 0.8);
+}
+
+.swiper-container-fix {
+  width: 90%;
+  max-width: 900px;
+   
+  margin: 0 auto;
+  overflow: hidden;
+ 
+  
+}
+
+.swiper {
+  background: transparent !important;
+}
+
+.swiper-slide {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  
+}
+
+.swiper-slide-shadow {
+  display: none !important;
+  
+}
+
+.swiper-image {
+  width: 85%;
+  
+  object-fit: cover;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+
+  
+}
+
+
+@media (max-width: 992px) {
+  .swiper-image {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-container-fix {
+    max-width: 40%;
+  }
+
+  .swiper-image {
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper-container-fix {
+    max-width: 35%;
+    
+  }
+  .swiper-image {
+    height: auto;
+    object-fit: cover;
+    width: 85%;
+   
+  }
+
+  .fisrtTitle{
+    margin-top: 20px;
+  }
+
+ 
+}

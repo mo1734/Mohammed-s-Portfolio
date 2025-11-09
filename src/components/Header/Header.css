@@ -1,0 +1,194 @@
+:root {
+    --gold-color: #B8860B;
+    --gold-hover-bg: #b8870b7d;
+    --transition-duration: 0.3s;
+
+    --text-dark-light: #ffffff;
+    --text-dark-muted: #ccc;
+    
+    
+    --header-h1: 3.5rem; 
+    --header-p1: 1.5rem; 
+    --header-p2: 1rem;
+    --link-size: 1rem;
+    --image-size: 280px;
+    --btn-font-size: 1rem;
+}
+
+
+.custom-header-section {
+    min-height: 99.9vh;
+    margin-top: 60px;
+    padding-bottom: 150px;
+    margin-bottom: 150px;
+}
+
+.custom-gold-text {
+    color: var(--gold-color) !important;
+}
+
+.custom-link-gold {
+    color: #9ea6ad;
+    transition: color var(--transition-duration);
+    font-size: var(--link-size);
+}
+
+.custom-link-gold:hover {
+    color: var(--gold-color);
+}
+
+.custom-image-cont {
+    width: var(--image-size);
+    height: var(--image-size);
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow:
+        0 8px 16px rgba(0, 0, 0, 0.4),
+        0 0 0 5px rgba(184, 134, 11, 0.5);
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-image-cont:hover {
+    box-shadow:
+        0 0 5px var(--golden-glow),
+        0 0 5px var(--golden-glow),
+        0 0 15px rgba(255, 215, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.custom-profile-image {
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-btn-size {
+    padding: 0.75rem 1.5rem !important;
+    height: 40px !important;
+    border-radius: 12px !important;
+    font-size: var(--btn-font-size);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50% !important;
+    transition: all var(--transition-duration) ease;
+    text-decoration: none;
+}
+
+.custom-btn-gold {
+    background-color: var(--gold-color) !important;
+    border-color: var(--gold-color) !important;
+    color: white !important;
+}
+
+.custom-btn-gold:hover {
+    background-color: var(--gold-hover-bg) !important;
+    border-color: var(--gold-hover-bg) !important;
+    transform: scale(1.05);
+}
+
+.custom-btn-gold-outline {
+    background-color: var(--gold-hover-bg) !important;
+    border-color: var(--gold-hover-bg) !important;
+    color: white !important;
+}
+
+.custom-btn-gold-outline:hover {
+    background-color: var(--gold-color) !important;
+    border-color: var(--gold-color) !important;
+    transform: scale(1.05);
+}
+
+.header-h1-size {
+    font-size: var(--header-h1) !important;
+}
+
+.header-p1-size {
+    font-size: var(--header-p1) !important;
+}
+
+.header-p2-size {
+    font-size: var(--header-p2) !important;
+}
+
+.custom-text-secondary {
+    color: #9ca3af !important;
+    font-size: var(--header-p2);
+}
+
+body.dark .custom-text-light {
+    color: var(--text-dark-light) !important;
+}
+
+body.dark .custom-text-muted {
+    color: #9ca3af !important;
+}
+
+body.dark .custom-link-gold {
+    color: #9ca3af;
+}
+
+
+@media (max-width: 991.98px) {
+    :root {
+        --header-h1: 2.8rem;
+        --header-p1: 1.3rem;
+        --header-p2: 0.95rem;
+        --link-size: 0.95rem;
+        --image-size: 300px;
+        --btn-font-size: 16px;
+    }
+    .custom-header-section {
+        padding-bottom: 100px;
+        margin-bottom: 100px;
+        padding-top: 80px;
+        min-height: auto; 
+    }
+    .custom-btn-size {
+        padding: 10px 20px !important;
+    }
+    .custom-image-cont {
+        margin-bottom: 30px !important;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    :root {
+        --header-h1: 2.2rem;
+        --header-p1: 1.1rem;
+        --header-p2: 0.9rem;
+        --link-size: 0.85rem;
+        --image-size: 250px;
+        --btn-font-size: 13px;
+    }
+    .custom-header-section {
+        padding-top: 80px !important;
+        
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+    .mt-5 {
+        margin-top: 2.5rem !important;
+    }
+    .mt-4 {
+        margin-top: 1rem !important;
+    }
+    .custom-btn-size {
+        padding: 10px 15px !important;
+        width: 48% !important; 
+    }
+    .d-flex.gap-3.justify-content-center {
+        flex-wrap: wrap; 
+    }
+    .custom-image-cont {
+        margin-bottom: 20px !important;
+    }
+}

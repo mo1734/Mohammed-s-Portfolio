@@ -1,0 +1,224 @@
+:root {
+    --gold-color: #B8860B;
+    --transition-duration: 0.3s;
+    --dark-bg: #1e1e1e;
+    --golden-glow: rgba(255, 215, 0, 0.4);
+
+    
+    --skills-h2-size: 3.5rem;
+    --skills-title-size: 2.5rem;
+    --skills-p-size: 1.25rem;
+    --swiper-width: 280px;
+    --swiper-height: 350px;
+    --card-title-size: 1.25rem;
+    --card-subtitle-size: 0.9rem;
+    --skill-icon-size: 48px;
+
+    
+    --contact-h2-size: 3.5rem;
+    --contact-p-size: 1.25rem;
+    --form-label-size: 1rem;
+    --form-input-size: 1rem;
+    --form-icon-size: 20px;
+    --submit-btn-font: 1.1rem;
+    --lottie-contact-size: 100px;
+    --contact-footer-p: 0.9rem;
+    --lottie-two-size: 400px;
+}
+
+
+
+.custom-gold-text {
+    color: var(--gold-color) !important;
+}
+
+.custom-heading-color {
+    color: rgb(161, 161, 170) !important;
+}
+
+.custom-text-light {
+    color: #ffffff; 
+}
+
+
+.custom-h2-skills-size { font-size: var(--skills-h2-size) !important; }
+.custom-h2-title-size { font-size: var(--skills-title-size) !important; }
+.custom-p-body-size { font-size: var(--skills-p-size) !important; }
+.custom-skill-icon-size { width: var(--skill-icon-size); height: var(--skill-icon-size); }
+
+
+.mySwiper {
+    width: var(--swiper-width);
+    height: var(--swiper-height);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.mySwiper .swiper-slide .card {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54, 55, 56, 0.858);
+    color: #fff;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+   
+}
+
+.custom-card-hover {
+    transition: transform var(--transition-duration);
+    cursor: pointer;
+    color: white;
+}
+
+.custom-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(184, 134, 11, 0.7) !important;
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+    transition: all 0.3s ease;
+}
+
+.custom-card-title-size { font-size: var(--card-title-size) !important; }
+.custom-card-subtitle-size { font-size: var(--card-subtitle-size) !important; opacity: 0.6; }
+
+
+
+.custom-h2-contact-size { font-size: var(--contact-h2-size) !important; }
+.custom-p-contact-size { font-size: var(--contact-p-size) !important; }
+.custom-p-contact-footer { font-size: var(--contact-footer-p) !important; }
+
+.Form {
+    width: 100%;
+    margin: auto;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 2px solid var(--gold-color);
+    box-shadow:
+        0 0 10px rgba(184, 134, 11, 0.3),
+        0 0 20px rgba(184, 134, 11, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.custom-label-size { font-size: var(--form-label-size) !important; }
+.custom-input-size {
+    font-size: var(--form-input-size) !important;
+    background-color: #696969 !important;
+    border: 1px solid #555 !important;
+    color: white !important;
+    transition: border-color 0.3s;
+}
+.custom-input-size:focus {
+    background-color: #333 !important;
+    border-color: var(--gold-color) !important;
+    box-shadow: 0 0 0 0.25rem rgba(184, 134, 11, 0.25);
+}
+.custom-icon-size { font-size: var(--form-icon-size) !important; }
+
+
+.custom-submit-btn {
+    font-size: var(--submit-btn-font) !important;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--gold-hover-bg) !important;
+    border: 1px solid var(--gold-color) !important;
+    color: white !important;
+    border-radius: 8px;
+    width: 70%;
+}
+.custom-submit-btn:hover {
+    background-color: var(--gold-color) !important;
+    transform: scale(1.02);
+}
+.custom-icon-btn { font-size: 19px !important; }
+
+
+.Lottie-Contact-Container {
+    width: var(--lottie-contact-size);
+    height: var(--lottie-contact-size);
+}
+.Lottie-Contact-Two-Container {
+    width: var(--lottie-two-size);
+    height: var(--lottie-two-size);
+}
+
+
+@media (max-width: 991.98px) {
+    :root {
+        
+        --skills-h2-size: 2.5rem;
+        --skills-title-size: 2rem;
+        --skills-p-size: 1.1rem;
+        --swiper-width: 250px;
+        --swiper-height: 320px;
+        --card-title-size: 1.1rem;
+        --card-subtitle-size: 0.85rem;
+        --skill-icon-size: 40px;
+        
+
+        --contact-h2-size: 2.5rem;
+        --contact-p-size: 1.1rem;
+        --form-label-size: 0.95rem;
+        --form-input-size: 0.95rem;
+        --form-icon-size: 18px;
+        --submit-btn-font: 1rem;
+        --lottie-contact-size: 90px;
+        --lottie-two-size: 300px; 
+    }
+
+   
+    .contact-form-col {
+        margin: 0 auto !important;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    :root {
+        
+        --skills-h2-size: 2rem;
+        --skills-title-size: 1.5rem;
+        --skills-p-size: 1rem;
+        --swiper-width: 220px;
+        --swiper-height: 280px;
+        --card-title-size: 1rem;
+        --card-subtitle-size: 0.8rem;
+        --skill-icon-size: 35px;
+        
+        --contact-h2-size: 2rem;
+        --contact-p-size: 1rem;
+        --form-label-size: 0.9rem;
+        --form-input-size: 0.9rem;
+        --form-icon-size: 16px;
+        --submit-btn-font: 0.9rem;
+        --lottie-contact-size: 80px;
+    }
+
+    
+    .col-12.col-md-6.order-2.order-md-1 {
+        text-align: center !important;
+    }
+
+    
+    .pt-5, .mt-5 {
+        padding-top: 2rem !important;
+        margin-top: 2rem !important;
+    }
+
+    
+    .custom-submit-row {
+        flex-direction: column-reverse; 
+        align-items: center;
+        gap: 10px;
+    }
+    .custom-submit-btn {
+        width: 100% !important; 
+        padding: 0.6rem 1rem;
+    }
+    .Lottie-Contact-Container {
+        margin-bottom: -25px; 
+    }
+
+}

@@ -1,0 +1,157 @@
+:root {
+    --gold-color: #B8860B;
+    --golden-glow: rgba(255, 215, 0, 0.4);
+}
+
+
+.accordion {
+    margin: auto;
+    height: auto;
+    background-color: #2c2c2c; 
+    border-radius: 8px; 
+    border: 2px solid var(--golden-glow); 
+    box-shadow: 
+        0 0 10px var(--golden-glow), 
+        0 0 10px var(--golden-glow), 
+        0 0 40px rgba(255, 215, 0, 0.5); 
+    transition: box-shadow 0.3s ease-in-out;
+}
+.accordion:hover {
+    box-shadow: 
+        0 0 15px var(--golden-glow), 
+        0 0 15px var(--golden-glow),
+        0 0 45px rgba(255, 215, 0, 0.8); 
+}
+
+.accordion .accordion-header button {
+    background-color: #2c2c2c; 
+    color: #ffffff;
+    
+    width: 100%; 
+    text-align: left;
+}
+
+.accordion .accordion-body {
+    background-color: #6a6a6a; 
+    color: #ffffff;
+    font-size: 0.95rem; 
+}
+
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+    filter: invert(84%) sepia(15%) saturate(0%) hue-rotate(26deg) brightness(96%) contrast(89%);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+@media (max-width: 991.98px) {
+    
+    section {
+        padding-top: 60px !important;
+    }
+
+   
+    .container > h2 {
+        font-size: 2.5rem !important;
+        margin-bottom: 50px !important;
+    }
+    
+    
+    h3.fw-semibold {
+        font-size: 1.5rem !important;
+        margin-top: 40px !important;
+    }
+
+    
+    .col-md-6 .row.text-center .fs-1 {
+        font-size: 2.5rem !important;
+    }
+    
+  
+    .col-md-6 .row.text-center p {
+        font-size: 0.9rem;
+    }
+
+    
+    .accordion .accordion-header button {
+        font-size: 0.95rem;
+        padding: 0.8rem 1rem;
+    }
+    
+    
+    .accordion .accordion-body {
+        font-size: 0.9rem;
+    }
+    
+    
+    .accordion-body img {
+        max-width: 350px !important;
+    }
+}
+
+
+
+@media (max-width: 575.98px) {
+    
+    section {
+        padding-top: 50px !important;
+    }
+    
+    
+    .row.g-5 .col-md-6 {
+        padding-left: var(--bs-gutter-x, 1rem);
+        padding-right: var(--bs-gutter-x, 1rem);
+        padding-top: 1rem !important; 
+    }
+
+    
+    .container > h2 {
+        font-size: 2rem !important;
+        margin-bottom: 40px !important;
+    }
+
+    
+    h3.fw-semibold {
+        font-size: 1.3rem !important;
+        margin-top: 30px !important;
+    }
+    
+    
+    .col-md-6 .row.text-center .fs-1 {
+        font-size: 2rem !important;
+    }
+    
+    
+    .col-md-6 .row.text-center p {
+        font-size: 0.75rem;
+    }
+    
+    
+    ul {
+        font-size: 0.9rem;
+        padding-left: 20px;
+    }
+
+    
+    .accordion .accordion-header button {
+        font-size: 0.85rem;
+        padding: 0.75rem 0.8rem;
+    }
+
+   
+    .accordion .accordion-body {
+        font-size: 0.85rem;
+        padding: 1rem;
+    }
+    
+    
+    .accordion-body img {
+        max-width: 100% !important; 
+    }
+}
