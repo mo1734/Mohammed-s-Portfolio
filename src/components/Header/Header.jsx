@@ -5,6 +5,7 @@ import HeaderImage from '../../assets/Images/cropped_circle_imageThree.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { motion } from "framer-motion"
 import { EffectFlip, Pagination, Navigation } from 'swiper/modules';
+import { NavLink } from 'react-router-dom';
 function Header() {
     return (
         
@@ -69,12 +70,12 @@ function Header() {
                         
                         <div className="mt-5 d-flex gap-3 justify-content-center justify-content-md-start">
 
-                            <a 
-                                href="#projects" 
+                            <NavLink to={'Projects'}
+                                 
                                 className="btn custom-btn-gold custom-btn-size text-white"
                             >
                                 My Projects
-                            </a>
+                            </NavLink>
 
                             <a 
                                 href="#contact" 
